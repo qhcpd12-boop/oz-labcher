@@ -12,29 +12,29 @@ h1 {
 }
 main {
   padding: 1rem; /* 16px */
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem; /* 16px */
 }
-
-
 .box {
-    width: 100%;
+  width: 100%;
   padding: 1rem; /* 16px */
+  margin-bottom: 1rem; /* 16px */
   background-color: lightcoral;
   text-align: center;
   box-sizing: border-box;
 }
 /* 태블릿 */
-@media (max-width: 1023px) {
+@media (min-width: 768px) {
   main {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .box {
+    width: calc(50% - 0.5rem);
   }
 }
-/* 모바일 */
-@media (max-width: 767px) {
-  main {
-    grid-template-columns: 1fr;
+/* 데스크톱: 1024px 이상 */
+@media screen and (min-width: 1024px) {
+  .box {
+    width: calc(33.33% - 0.7rem);
   }
 }

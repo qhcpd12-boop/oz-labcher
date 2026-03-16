@@ -1,44 +1,25 @@
 * {
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-body {
-    background-color: #0f0f0;
-    font-family:Arial, Helvetica, sans-serif
+main {
+    padding: 30px;
 }
-.form-group {
-    margin-bottom: 15px;
+.title {
+    font-size: 64px;
+    font-weight: bold;
+    /* padding: 10px 0px */
 }
-.form-group::after {
-    content: ""; display: block; 
-    height: 1px; 
-    background: #ddd; 
-    margin-top: 10px; 
+.box {
+    margin: 10px;
+    padding: 24px;
+    width: 300px;
+    border: solid 1px;
+    text-align: center;
 }
-#registration-form {
-    background-color: #ffffff;
-    max-width: 500px; 
-    margin: 0 auto;
-}
-[type="text"], 
-[type="email"], 
-[type="password"] {
-    width: 100%;
-    border: 1px solid #ccc;
-}
-[type="submit"], 
-[type="reset"] {
-    background-color: #007bff; 
-    color: white; 
-    padding: 10px 20px;
-    border-radius : 15px;
-}
-form p {padding: 5spx;}
-form> p{bottom: 4px sold #eee;}
-label{ display: inline-block; 
-widh:100%;}
-select{
-    widh: 20px;
-    border: 1px sold #007bff;
+#test-btn {
+    margin: 10px;
+    padding: 10px 24px;
+    font-size: 12px;
+    font-weight: bold;
 }

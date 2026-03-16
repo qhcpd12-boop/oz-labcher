@@ -1,65 +1,50 @@
-// 점수 입력
-let scoreㅑ = Number(prompt("점수를 입력하세요 (0~100)"));
+let input = prompt("점수를 입력하세요.");
+// let score = "10" + 5; // "10" + "5" => "105"
+const BONUS_SCORE = 5;
+let score = Number(input);
 
-// 보너스 5점 추가 (복합 대입 연산자 사용)
-score += 5;
+let lastScore = score + BONUS_SCORE;
+// score += BONUS_SCORE;    // 더하고 할당했구나!
+// let lastScore = score;
+console.log(lastScore);
+console.log(typeof lastScore);
 
-// 최종 점수 제한 (최대 105점)
-let finalScore = (score <= 105) ? score : 105;
+// 최종점수 콘솔찍기
+console.log("Final Score: " + lastScore);
 
-// 등급 부여 (if / else if / else)
-let grade;
-if (finalScore >= 90) {
-    grade = "A";
-} else if (finalScore >= 80) {
-    grade = "B";
-} else if (finalScore >= 70) {
-    grade = "C";
-} else if (finalScore >= 60) {
-    grade = "D";
+// 등급 콘솔찍기
+if (lastScore >= 100) {
+    console.log("Grade: S");
+} else if (lastScore >= 90) {
+    console.log("Grade: A");
+} else if (lastScore >= 80) {
+    console.log("Grade: B");
+} else if (lastScore >= 70) {
+    console.log("Grade: C");
+} else if (lastScore >= 60) {
+    console.log("Grade: D");
 } else {
-    grade = "F";
+    console.log("Grade: F");
 }
 
-// 합격 / 불합격 (삼항 연산자)
-let result = (finalScore >= 60) ? "Pass" : "Fail";
-
-// 등급별 메시지 출력 (switch)
-let message;
-switch(grade) {
-    case "A":
-        message = "Excellent work!";
-        break;
-    case "B":
-        message = "Good job!";
-        break;
-    case "C":
-        message = "Satisfactory performance.";
-        break;
-    case "D":
-        message = "Needs improvement.";
-        break;
-    case "F":
-        message = "Please try harder!";
-        break;
-    default:
-        message = "";
+// 상태 콘솔찍기
+if(lastScore >= 60) {
+    console.log("Status: Pass");
+} else {
+    console.log("Status: Fail");
 }
 
-// 결과 출력
-console.log("입력 점수:", score - 5); // 원래 점수
-console.log("최종점수:", finalScore);
-console.log("등급:", grade);
-console.log("결과:", result);
-console.log("메시지:", message);
-
-//let input=jprompt("점수를 입력하세요");
-console.log(input);
-console.log(typeof input);
-let score=Number(input);
-console.log(score);
-console.log(typeof score);
-
-let lastscore =score + bonus_score;
-console.log(lastscore)
-console.log(typeof lastscore);
+// 메세지 콘솔찍기
+if (lastScore >= 100) {
+    console.log("Message: Super!!");
+} else if (lastScore >= 90) {
+    console.log("Message: Excellent work!");
+} else if (lastScore >= 80) {
+    console.log("Message: Good job!");
+} else if (lastScore >= 70) {
+    console.log("Message: Satisfactory performance.");
+} else if (lastScore >= 60) {
+    console.log("Message: Needs improvement.");
+} else {
+    console.log("Message: Please try harder!");
+}
