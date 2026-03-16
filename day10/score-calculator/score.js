@@ -1,5 +1,5 @@
 // 점수 입력
-let score = Number(prompt("점수를 입력하세요 (0~100)"));
+let scoreㅑ = Number(prompt("점수를 입력하세요 (0~100)"));
 
 // 보너스 5점 추가 (복합 대입 연산자 사용)
 score += 5;
@@ -52,3 +52,14 @@ console.log("최종점수:", finalScore);
 console.log("등급:", grade);
 console.log("결과:", result);
 console.log("메시지:", message);
+
+//let input=jprompt("점수를 입력하세요");
+console.log(input);
+console.log(typeof input);
+let score=Number(input);
+console.log(score);
+console.log(typeof score);
+
+let lastscore =score + bonus_score;
+console.log(lastscore)
+console.log(typeof lastscore);
