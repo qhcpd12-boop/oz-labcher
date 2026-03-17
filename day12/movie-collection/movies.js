@@ -1,3 +1,5 @@
+
+//alert("add")처음 인덱스와 연결 확인
 // 영화 배열 선언
 let movies = [];
 
@@ -14,7 +16,7 @@ let movie1 = {
   year: 1984,
   genre: "Romance/Fantasy"
 };
-//movie1의 타이틀,감독,,년도,장르를 하나의 정보롤 만든다
+//movie1의 타이틀,감독,,년도,장르로 하나의 정보롤 만든다
 let movie2 = {
   title: "The Notebook",
   director: "Nick Cassavetes",
@@ -29,7 +31,7 @@ let movie3 = {
   genre: "Romance"
 };
 
-// 배열에 영화 추가 /배열에 데이터를 추가하는 함수 push()
+// 배열에 영화 추가 /배열에 데이터를 추가하는 함수 push()이 순서대로 객체를 넣으면 출력
 movies.push(movie1);
 movies.push(movie2);
 movies.push(movie3);
@@ -93,7 +95,7 @@ function printMovies(movies, director = "Unknown") {
 
 // 함수 실행
 printMovies(movies);
-//->movies 매열에 전달.그래서 영화목록이 콘솔에 출력
+//->movies 배열에 전달.그래서 영화목록이 콘솔에 출력
 
 // 평균 출판년도 계산 ->영화들의 평균 연도를 계산하는 함수 calculateAverageYear 
 //movies의 배열안에 있는 모든 영화 년도를 평균으로 계산한다 0배열부터+1씩모든배열을 더하며 반복
