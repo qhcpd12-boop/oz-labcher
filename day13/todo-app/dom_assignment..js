@@ -1,11 +1,11 @@
 // DOM 요소 선택
-const taskInput = document.getElementById('taskInput');//입력창
+const taskInput = document.getElementById('taskInput');//입력창 돔트리에서 taskInput을 가져왔다
 const addButton = document.getElementById('addButton');//추가버튼
 const taskList = document.getElementById('taskList');//리스트,목럭
 const cclearButton = document.getElementById('clearButton');//전체삭제
 
 // 할 일 추가 함수
-function addTask() {//추가 버튼 클릭
+function addTask() {//할일 추가 버튼 클릭
     const taskText = taskInput.value.trim();//유저가입력할 창에 글자로 입력값을 가져와 양쪽 공백제거trim()후 변수에저장
 //"  공부 "라고 치면 "공부"라고 값이 나옴 taskInput.value->사용자가 친 임력값 을 const taskText 변수값에 저장,"공부하기"로 출력
  // 입력 검증
