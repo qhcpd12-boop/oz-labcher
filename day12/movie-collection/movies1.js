@@ -1,5 +1,4 @@
 const targetGenre = "드라마";
-
 const prepareMovies = () => {
   const movies = [];
   let movie1 = {

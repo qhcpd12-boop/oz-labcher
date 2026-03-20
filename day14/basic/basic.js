@@ -6,7 +6,7 @@
 // }, 5000);
 // console.log("다른 작업 수행");
 
-// 콜백 함수
+// 콜백 함수,고차함수 map, filter, reduce**
 function sayHello(name, callback) {
   console.log(`안녕, ${name}`);
   setTimeout(() => {
