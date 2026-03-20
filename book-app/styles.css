@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #f5f7fa;
+}
+
+/* 제목 */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 컨테이너 */
+.book-container {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 입력창 */
+.book-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 버튼 */
+.book-button {
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: 0.2s;
+}
+
+/* 버튼 호버 효과 */
+.book-button:hover {
+    background-color: #45a049;
+}
+
+/* 리스트 */
+.book-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/* 각 도서 */
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* 결과 영역 */
+#results {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eef3ff;
+    border-radius: 5px;
+}
+
+/* 결과 리스트 */
+#results ul {
+    list-style: none;
+    padding: 0;
+}
+
+#results li {
+    margin: 5px 0;
+}
