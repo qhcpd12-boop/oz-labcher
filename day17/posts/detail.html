@@ -1,0 +1,48 @@
+<!-- detail.html (포스트 상세 화면) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+        }
+        h1, h3 {
+            color: #333;
+        }
+        #post-detail {
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #post-detail h3 {
+            margin-top: 0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Post Detail</h1>
+    <div id="post-detail"></div>
+     <p>...loding</p><!-- 포스트 상세 정보를 로드하는 동안 사용자에게 표시되는 로딩 메시지.
+      초기에는 이 메시지가 보이지만, 포스트 데이터가 성공적으로 로드되면 이 메시지는 post-detail 요소의 innerHTML로<h3>제목</h3><p>내용</p> 대체되어 사라짐. -->
+    <!-- 에러 발생 시 JS가 아래 내용으로 덮어씀 -->
+     <!----- <p>Error loading post details</p><----- 포스트 상세 정보를 로드하는 데 실패했을 때 표시되는 에러 메시지. 
+    이 메시지는 자바스크립트 코드에서 오류가 발생했을 때 사용자에게 보여지도록 설정되어 있음. 초기에는 이 메시지가 보이지만, 포스트 데이터가 성공적으로 로드되면 이 메시지는 post-detail 요소의 innerHTML로 대체되어 사라짐. -->
+    <a href="index.html">Back to List</a><!-- 포스트 목록 화면으로 돌아가는 링크. 사용자가 이 링크를 클릭하면 index.html로 이동하여 포스트 목록을 볼 수 있음. -->
+    <script src="detail.js"></script>
+</body>
+</html>
