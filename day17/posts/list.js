@@ -4,6 +4,7 @@ const apiUrl = "https://jsonplaceholder.typicode.com";
 // 포스트 목록 표시
 async function displayPosts() {
     // 포스트 데이터 가져오기
+
     try {
         const response = await fetch(`${apiUrl}/posts`);// API에서 포스트 데이터 가져오기
         //서버 응답 결과=게시물에서 apiUrl/posts로 요청 보냄 fetch는 요청,await는 응답 기다림
